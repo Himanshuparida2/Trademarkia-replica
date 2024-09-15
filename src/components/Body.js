@@ -1,11 +1,11 @@
-import React, { act, useContext, useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { SearchQuery } from '../context/SearchQuery';
 
 function Body(props) {
   const [data,setData]=useState([]);
   let [page,setPage]=useState(1);
   let {query,SetQuery}=useContext(SearchQuery);
-  let {active,SetActive}=useContext(SearchQuery);
+  let {active}=useContext(SearchQuery);
   useEffect(() => {
     const myHeaders = new Headers();
     myHeaders.append("accept", "application/json, text/plain, */*");
@@ -65,7 +65,7 @@ function Body(props) {
             <h4>Class/Description</h4>
           </div>
           <div className="list-content">
-            {data.filter(num=>{if(active=''){return true;} return num._source.status_type==active}).map((item)=>(
+            {data.filter(num=>{if(active===''){return true;} return num._source.status_type===active}).map((item)=>(
             <ul key={item._id}>
               <li><img src="https://www.strunkmedia.com/wp-content/uploads/2018/05/bigstock-221516158.jpg" id='company-logo' alt="" /></li>
               <li><h5>{item._source.mark_identification.substring(0,50)}</h5> <h5>{((item._source.current_owner).substring(0,50))}</h5><h5>{item._id}</h5><h5>{new Date(item._source.registration_date).toLocaleString('en-US',{ date:'numeric',year: 'numeric',month:'long'})}</h5></li>
