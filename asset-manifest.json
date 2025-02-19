@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Trademarkia-replica/static/css/main.7981671b.css",
+    "main.js": "/Trademarkia-replica/static/js/main.5a356418.js",
+    "static/js/453.d178498d.chunk.js": "/Trademarkia-replica/static/js/453.d178498d.chunk.js",
+    "static/media/logo_trademarkia.webp": "/Trademarkia-replica/static/media/logo_trademarkia.3e7b856a169f2a3b166e.webp",
+    "index.html": "/Trademarkia-replica/index.html",
+    "main.7981671b.css.map": "/Trademarkia-replica/static/css/main.7981671b.css.map",
+    "main.5a356418.js.map": "/Trademarkia-replica/static/js/main.5a356418.js.map",
+    "453.d178498d.chunk.js.map": "/Trademarkia-replica/static/js/453.d178498d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7981671b.css",
+    "static/js/main.5a356418.js"
+  ]
+}
